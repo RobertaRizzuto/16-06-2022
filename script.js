@@ -57,3 +57,4 @@ const person = {
     return this.name.toLocaleUpperCase(); 
   },
 };
+console.log(person.getFullName());
