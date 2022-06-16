@@ -53,8 +53,25 @@ const person = {
   surname: "Rizzuto",
   age: 24,
   nationality: "italian",
+  getName: function () {
+    return this.name.toLocaleUpperCase();
+  },
+  getSurname: function () {
+    return this.surname.toLocaleLowerCase();
+  },
   getFullName: function () {
-    return this.name.toLocaleUpperCase(); 
+    return this.name + this.surname;
+  },
+  modifiedAge: function () {
+    return this.age + 3;
+  },
+  getNationality: function () {
+    console.log("unknown");
   },
 };
+
+console.log(person.getName());
+console.log(person.getSurname());
 console.log(person.getFullName());
+console.log(person.modifiedAge());
+console.log(person.getNationality());
