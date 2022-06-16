@@ -67,7 +67,7 @@ const person = {
   },
   getNationality: function () {
     console.log("unknown");
-  },
+  }
 };
 
 console.log(person.getName());
@@ -75,3 +75,15 @@ console.log(person.getSurname());
 console.log(person.getFullName());
 console.log(person.modifiedAge());
 console.log(person.getNationality());
+
+const number = {
+  a: 12.6,
+  b:13.98,
+  
+}
+//delete number['b'] //per irmuovere b dall'oggetto number
+
+
+const personUnionNumber = Object.assign(person, number); //unione oggetti
+
+console.log(personUnionNumber); 
