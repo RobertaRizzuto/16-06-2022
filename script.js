@@ -43,7 +43,6 @@ function calc(oneNum, sign, twoNum) {
     case "/":
       return oneNum / twoNum;
 
-      break;
   }
 }
 
